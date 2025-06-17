@@ -11,10 +11,7 @@ import CoreData
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
-    @FetchRequest<Pokemon>(
-        sortDescriptors: [SortDescriptor(\.id)],
-        animation: .default
-    )private var pokedex
+    @FetchRequest<Pokemon>(sortDescriptors: [SortDescriptor(\.id)], animation: .default) private var pokedex
     
     @State private var searchText = ""
     
@@ -25,7 +22,7 @@ struct ContentView: View {
         
         // Search predicate
         if !searchText.isEmpty {
-            predicates.append(NSPredicate(format: "name conatains[c] %@", searchText))
+            predicates.append(NSPredicate(format: "name contains[c] %@", searchText))
         }
         // Filter by favorite predicate
         
