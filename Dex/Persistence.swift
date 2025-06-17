@@ -25,7 +25,7 @@ struct PersistenceController {
         newPokemon.attack = 49
         newPokemon.defense = 49
         newPokemon.specialAttack = 65
-        newPokemon.speicalDefense = 65
+        newPokemon.specialDefense = 65
         newPokemon.speed = 45
         newPokemon.sprite = URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png")
         newPokemon.shiny = URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png")
@@ -51,9 +51,11 @@ struct PersistenceController {
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 
-                fatalError("Unresolved error \(error), \(error.userInfo)")
+                print(error)
             }
         })
+        
+        container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyStoreTrump
         container.viewContext.automaticallyMergesChangesFromParent = true
     }
 }
