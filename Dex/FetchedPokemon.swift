@@ -94,4 +94,5 @@ struct FetchedPokemon: Decodable {
         sprite = try SpriteContainer.decode(URL.self, forKey: .sprite)
         
         shiny = try SpriteContainer.decode(URL.self, forKey: .shiny)
+    }
 }
