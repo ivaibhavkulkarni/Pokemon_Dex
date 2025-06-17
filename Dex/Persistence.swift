@@ -8,8 +8,10 @@
 import CoreData
 
 struct PersistenceController {
+    // the thing that controls our databse
     static let shared = PersistenceController()
 
+    // the thing that controls our sample preview database 
     @MainActor
     static let preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
@@ -28,9 +30,11 @@ struct PersistenceController {
         }
         return result
     }()
-
+    
+    // The thing that holds the stuff ( The databse )
     let container: NSPersistentContainer
 
+    // Just an regular init function
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "Dex")
         if inMemory {
