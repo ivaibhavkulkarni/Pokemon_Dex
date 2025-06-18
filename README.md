@@ -53,20 +53,6 @@ Select an iOS simulator or device and press Cmd + R to build and run the app.
 ## Fetch Pokémon:
 On first launch, tap the "Fetch Pokémon" button to populate the Pokedex with data from PokéAPI.
 
-
-
-Project Structure
-Dex/
-├── DexApp.swift                # App entry point
-├── ContentView.swift           # Main Pokedex list view
-├── PokemonDetail.swift         # Pokémon detail view
-├── FetchService.swift          # Networking service for PokéAPI
-├── FetchedPokemon.swift        # Struct for decoding API responses
-├── Persistence.swift           # CoreData setup and preview data
-├── Assets.xcassets/            # Images and type-specific colors
-├── Dex.xcdatamodeld/           # CoreData model
-├── Dex.xcodeproj/              # Xcode project configuration
-
 ## Future Enhancements
 
 Add support for additional Pokémon generations.
@@ -82,6 +68,11 @@ Acknowledgments
 
 PokéAPI for providing the Pokémon data.
 Apple’s SwiftUI, CoreData, and WidgetKit documentation for guidance.
-## Screenshots:
+## Screenshots:<img widt<img width="1440" alt="Screenshot 2025-06-18 at 4 02 00 PM" src="https://github.com/user-attachments/assets/f9cf3fb9-9b64-42ee-9976-6be06afcedbf" />
+h="1440" alt="Screenshot 2025-06-18 at 4 01 10 PM" src="https://github.com/user-attachments/assets/60e4c8e5-6180-40a1-ab3c-850b0948dacd" />
+<img width="1440" alt="Screenshot 2025-06-18 at 4 01 56 PM" src="https://github.com/user-attachments/assets/62ee1e11-5cf0-4b6e-83df-8a7288f4907a" />
+<img width="1440" alt="Screenshot 2025-06-18 at 4 02 20 PM" src="https://github.com/user-attachments/assets/21ff5eda-2d04-4618-bf15-15cb16e3d0f5" />
+
+<img width="1440" alt="Screenshot 2025-06-18 at 4 02 10 PM" src="https://github.com/user-attachments/assets/b89480c7-88e4-4226-8650-0011f585a1fc" />
 
 
