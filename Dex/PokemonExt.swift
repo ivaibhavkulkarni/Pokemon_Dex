@@ -54,3 +54,4 @@ struct Stat: Identifiable{
     let name: String
     let value: Int16
 }
+
